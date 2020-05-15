@@ -1,0 +1,49 @@
+@import "variables";
+@import "mixins";
+@import "keyframes";
+
+
+.blocks{
+    min-height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    color: white;
+    
+}
+.block:nth-child(1) {
+    left: 0;
+    background: $color1;
+    animation: strip1 1.5s;
+  }
+.block:nth-child(2) {
+    left: 20vw;
+    background: $color2;
+    animation: strip2 1.5s;
+  }
+.block:nth-child(3) {
+    left: 40vw;
+    background: $color3;
+    animation: strip3 1.5s;
+  }
+.block:nth-child(4) {
+  background: $color4;
+  left: 60vw;
+  animation: strip4 1.5s;
+    
+  }
+.block:nth-child(5) {
+    left: 80vw;
+    background: $color5;
+    animation: strip5 1.5s;
+  }
+
+body {
+        font-family: 'Lato';
+        text-rendering: geometricPrecision;
+        line-height: 1.5;
+    }
+
+.text {
+    font-weight: 300;
+    font-size: 3.5vw;
+}  
